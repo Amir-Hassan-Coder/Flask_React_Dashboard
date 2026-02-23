@@ -9,7 +9,7 @@ def register():
     new_user = User(
         username=data['username'],
         email=data['email'],
-        password=data['password'], # Real project mein isay hash karna zaroori hai
+        password=data['password'], #
         role=data.get('role', 'Competitor')
     )
     db.session.add(new_user)
