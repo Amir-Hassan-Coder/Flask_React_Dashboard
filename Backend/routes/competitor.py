@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 from models import db, Submission, Competition
 from utils.ai_evaluator import evaluate_article
-import traceback # Error detail dekhne ke liye
+import traceback 
 
 competitor_bp = Blueprint('competitor', __name__)
 
